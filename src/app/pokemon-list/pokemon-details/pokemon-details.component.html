@@ -1,0 +1,9 @@
+<p-dialog  [(visible)]="display" (onHide)="close()">
+ <div *ngFor="let pok of  obs | async">
+     <img src={{pok.sprites.back_shiny}} alt="">
+     <img src={{pok.sprites.front_default}} alt="">
+     <img src={{pok.sprites.front_shiny}} alt="">
+     <img src={{pok.sprites.back_default}} alt="">
+     <h3 style="text-align: center;">{{pok.name}}</h3>
+ </div>
+</p-dialog>
